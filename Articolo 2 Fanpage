@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Don Matteo 15</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="contenitore-articolo">
+        <p>
+            <strong>Don Matteo 15 si farà.</strong> <strong>Raoul Bova</strong> tornerà a vestire i panni di <strong>Don
+                Massimo</strong> nelle <strong>nuove
+                puntate</strong> che sono attualmente in scrittura e andranno <strong>in onda nella primavera del
+                2026</strong>. La fiction con <strong>Eugenio Mastrandrea</strong> nel ruolo di Diego, <strong>Federica
+                Sabatini</strong> nel ruolo di Giulia, <strong>Gaia Messerklinger</strong> nel ruolo di Vittoria e
+            <strong>Nino Frassica</strong> e <strong>Nathalie Guetta</strong>, rispettivamente Cecchini e Natalina è
+            sopravvissuta all'<strong>addio di Terence Hill</strong>, mantenendo ascolti altissimi.
+            <em>Fanpage.it</em> ne ha parlato con il supervisore alla sceneggiatura Mario Ruggeri, che ha <br>raccontato
+            i
+            retroscena della <a href="#">quattordicesima stagione</a>, dalla <strong>morte di Patrizia Cecchini</strong>
+            al ritorno
+            fugace di Terence Hill. Nell'intervista ha svelato anche <strong>quando inizieranno le <br>riprese di Don
+                Matteo
+                15</strong>, quando
+            andrà in onda la nuova stagione e alcune <strong>anticipazioni sulla trama</strong>. E sul <strong>finale di
+                <br> Don
+                Matteo 14</strong>, in onda giovedì 19 dicembre, commenta: <br> <em class="commento">"Nino Cecchini ha
+                finalmente scoperto come è morta sua figlia. Attraverserà una crisi. E poi
+                ci sarà un momento importante che riguarderà Don Massimo, interpretato da Raoul Bova. Vogliono
+                ucciderlo."</em>
+        </p>
+        </p>
+
+    </div>
+</body>
+
+</html>
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.7;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.contenitore-articolo {
+    max-width: 460px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 28px;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+p strong {
+    color: #000;
+}
+
+p em {
+    font-style: italic;
+    color: #777;
+}
+
+a {
+    color: orange;
+    text-decoration: underline;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.commento {
+    color: #000;
+}
