@@ -6,24 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Don Matteo 15</title>
     <link rel="stylesheet" href="styles.css">
-</head>
-
-<body>
-    <div class="contenitore-articolo">
-        <h1>Don Matteo 15 si farà, <br>anticipazioni e quando andrà <br> in onda. Ruggeri: “Don <br> Massimo in crisi,
-            Diego e <br> Giulia torneranno”</h1>
-        <p class="paragrafo">
-            Don Matteo 15 con Raoul Bova si farà. Le nuove puntate sono in fase di scrittura. Intervista al supervisore
-            alla sceneggiatura Mario Ruggeri che svela a Fanpage.it le anticipazioni sulla trama, quando inizieranno le
-            riprese, quando andrà in onda la nuova stagione e i retroscena di Don Matteo 14, dalla morte di Patrizia
-            Cecchini al ritorno fugace di Terence Hill.
-        </p>
-        <p class="autrice">A cura di <strong class="nome-autrice">Daniela Seclì</strong></p>
-    </div>
-</body>
-
-</html>
-
+<style>
 body {
     font-family: Arial, sans-serif;
     text-align: left;
@@ -59,3 +42,21 @@ body {
   .nome-autrice {
     color: #000;
   }
+</style>
+</head>
+
+<body>
+    <div class="contenitore-articolo">
+        <h1>Don Matteo 15 si farà, <br>anticipazioni e quando andrà <br> in onda. Ruggeri: “Don <br> Massimo in crisi,
+            Diego e <br> Giulia torneranno”</h1>
+        <p class="paragrafo">
+            Don Matteo 15 con Raoul Bova si farà. Le nuove puntate sono in fase di scrittura. Intervista al supervisore
+            alla sceneggiatura Mario Ruggeri che svela a Fanpage.it le anticipazioni sulla trama, quando inizieranno le
+            riprese, quando andrà in onda la nuova stagione e i retroscena di Don Matteo 14, dalla morte di Patrizia
+            Cecchini al ritorno fugace di Terence Hill.
+        </p>
+        <p class="autrice">A cura di <strong class="nome-autrice">Daniela Seclì</strong></p>
+    </div>
+</body>
+
+</html>
