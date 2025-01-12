@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vietnam</title>
+    <style>
+        body {
+            margin: 5%;
+        }
+
+        img {
+            width: 50%;
+            height: auto;
+            margin-left: 260px;
+            max-width: 600px;
+            min-width: 300px;
+            border-radius: 3%;
+        }
+
+        img:hover {
+            box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        a:hover {
+            color: darkviolet;
+        }
+
+        a:visited {
+            color: black;
+        }
+
+        h1 {
+            text-align: center;
+            font-family: 'Playfair Display', serif;
+        }
+
+        p {
+            font-size: large;
+            font-family: 'Roboto' sans-serif;
+            line-height: 1.5;
+            word-spacing: 1px;
+        }
+
+        div {
+            min-width: 350px;
+            border: 0.5px solid yellow;
+            border-radius: 5px;
+            padding: 2%;
+            box-shadow: 2px 2px 10px red;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <img src="https://cdn.pixabay.com/photo/2024/12/09/16/22/boat-9255590_960_720.jpg" alt="Imbarcazioni"
+            title="Imbarcazioni">
+        <h1>Scopri il Vietnam: Un Viaggio tra Meraviglia e Storia</h1>
+        <p>
+            Immagina un luogo dove la natura è straordinaria, la cultura è ricca e il cibo è un'esplosione di sapori.
+            Questo è il Vietnam, una destinazione che promette avventure indimenticabili e una connessione autentica con
+            la bellezza del mondo.
+            <br>
+            <br>
+            <strong>1. Paesaggi da Sogno</strong>:
+            Dai maestosi terrazzamenti di riso di Sapa alle acque color smeraldo della Baia di Ha Long, ogni angolo del
+            Vietnam sembra uscito da una cartolina. Puoi navigare lungo il Mekong, esplorare grotte spettacolari come
+            quelle di Phong Nha e perderti nei tramonti dorati sulle spiagge di Da Nang.
+            <br>
+            <br>
+            <strong>2. Storia e Cultura Avvolgenti</strong>:
+            Il Vietnam racconta una storia di resilienza e tradizione. Visita le antiche città imperiali come Hue, i
+            templi millenari di My Son e scopri l'eredità francese nelle strade di Hanoi e Ho Chi Minh City.
+            Passeggiando tra le lanterne colorate di Hoi An, sentirai il fascino senza tempo di un paese che vive in
+            armonia tra modernità e tradizione.
+            <br>
+            <br>
+            <strong>3. Gastronomia da Capogiro</strong>:
+            La cucina vietnamita è un viaggio a sé. Dallo street food come il "banh mi" e il "pho" ai piatti regionali
+            come il "cao lau", ogni boccone è un'esperienza. Aggiungi l'esperienza unica di gustare un caffè vietnamita
+            (con latte condensato!) in una caffetteria nascosta e avrai un assaggio della vera vita locale.
+            <br>
+            <br>
+            <strong>4. Persone Straordinarie</strong>:
+            I vietnamiti ti accoglieranno con un sorriso caloroso e una genuina ospitalità. Potrai immergerti nella loro
+            quotidianità, partecipare a festival tradizionali e sentirti parte di una comunità che dà valore alle
+            connessioni umane.
+            <br>
+            <br>
+            <strong>5. Avventura Accessibile</strong>:
+            Che tu voglia fare trekking tra le montagne, esplorare città vibranti o rilassarti in resort sulla spiaggia,
+            il Vietnam offre esperienze per ogni tipo di viaggiatore. E tutto a prezzi estremamente accessibili!
+            <br>
+            <br>
+            Un viaggio che cambia la vita:
+            Il Vietnam non è solo una destinazione, ma un'esperienza che ti trasforma. Ti insegna a rallentare, a
+            goderti le piccole cose e ad apprezzare la bellezza che il mondo ha da offrire.
+            <br>
+            <br>
+            Allora, cosa stai aspettando? Il Vietnam ti sta chiamando con le sue meraviglie. Preparati a vivere un
+            viaggio che porterai per sempre nel cuore! 🌏
+            <a href="https://it.wikipedia.org" rel="nofollow" target="_blank">Prenota qui il tuo viaggio</a>
+        </p>
+    </div>
+</body>
+
+</html>
