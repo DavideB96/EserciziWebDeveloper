@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultime Notizie</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .contenitore-principale {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            border-bottom: 3px solid rgb(255, 60, 0);
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        .contenitore-notizie {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .notizie {
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 15px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .notizie:hover {
+            cursor: pointer;
+            filter: brightness(1.1);
+        }
+
+        .categorie-notizie {
+            color: #999;
+            text-transform: uppercase;
+            font-size: 12px;
+            margin-bottom: 10px;
+        }
+
+        .ora-notizie {
+            background-color: rgb(255, 60, 0);
+            color: black;
+            font-weight: bold;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 12px;
+            margin-right: 8px;
+        }
+
+        .titoli-notizie {
+            font-size: 14px;
+            color: black;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="contenitore-principale">
+        <h2>Ultime notizie</h2>
+        <div class="contenitore-notizie">
+            <div class="notizie">
+                <div class="categorie-notizie">NAPOLI</div>
+                <span class="ora-notizie">16:47</span>
+                <span class="titoli-notizie">Terremoto ai Campi Flegrei, scossa alle 16.34: magnitudo 2.5, avvertita
+                    anche a Napoli</span>
+            </div>
+            <div class="notizie">
+                <div class="categorie-notizie">SPETTACOLO</div>
+                <span class="ora-notizie">16:46</span>
+                <span class="titoli-notizie">Sanremo 2025, chi vince nel corso delle serate sarà avvantaggiato in
+                    finale: la spiegazione del sondaggista Rai</span>
+            </div>
+            <div class="notizie">
+                <div class="categorie-notizie">SPETTACOLO</div>
+                <span class="ora-notizie">16:44</span>
+                <span class="titoli-notizie">Vale LP e Lil Jolie: "A Sanremo tifiamo Lucio Corsi, sogniamo di tornare in
+                    gara tra i Big"</span>
+            </div>
+            <div class="notizie">
+                <div class="categorie-notizie">SPORT</div>
+                <span class="ora-notizie">16:35</span>
+                <span class="titoli-notizie">Rugani condannato a 6 mesi per guida in stato di ebbrezza: Maserati
+                    sequestrata e ritiro della patente</span>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
