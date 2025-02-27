@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple</title>
+    <style>
+        .contenitore {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 30px;
+            gap: 3px;
+            justify-content: center;
+            height: fit-content;
+            overflow: auto;
+        }
+
+        @media (max-width:500px) {
+            .contenitore {
+                flex-direction: column;
+                gap: 0px;
+                height: fit-content;
+                overflow: auto;
+            }
+
+            .contenitore img {
+                width: 500px;
+                height: 100%;
+            }
+        }
+
+        img {
+            height: 280px;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .box-1,
+        .box-2,
+        .box-3,
+        .box-4 {
+            flex: 1 1 calc(50% - 10px);
+            max-width: calc(50% - 10px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contenitore">
+        <div class="box-1">
+            <img src="https://www.apple.com/v/apple-intelligence/b/images/overview/images-gallery/search_photos_videos__ceq1svclxq6a_large_2x.jpg"
+                alt="Apple apple-intelligence">
+        </div>
+        <div class="box-2">
+            <img src="https://www.apple.com/it/apple-watch-series-10/images/overview/media-card/highlights_track__bm5hjqwyi1jm_medium.jpg"
+                alt="Apple Watch">
+        </div>
+        <div class="box-3">
+            <img src="https://www.apple.com/v/apple-pencil/ae/images/overview/pro/hero__z7kty0msgsya_large_2x.jpg"
+                alt="ipad Pro">
+        </div>
+        <div class="box-4">
+            <img src="https://www.apple.com/v/macbook-air/s/images/overview/design/lifestyle-gallery/design_portability_1__gfw34rh367u6_medium.jpg"
+                alt="MacBook Air">
+        </div>
+    </div>
+</body>
+
+</html>
