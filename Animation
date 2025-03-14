@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DragonBall</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: rgb(44, 189, 246);
+            font-size: 50px;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        .DragonBall {
+            display: flex;
+            gap: 10px;
+            position: absolute;
+        }
+
+        .delay1 {
+            animation: Gokubounce 4s infinite ease-in-out;
+        }
+
+        .delay1 img {
+            width: 100px;
+            height: 150px;
+            object-fit: cover;
+            transform: scaleX(-1);
+        }
+
+        .delay2 {
+            animation: move 6s linear infinite;
+            position: absolute;
+            left: -200px;
+        }
+
+        .delay2 img {
+            width: 40px;
+            height: 40px;
+        }
+
+        .delay3 {
+            position: absolute;
+            top: -270px;
+            left: 60px;
+            animation: bounce 2s infinite ease-in-out;
+        }
+
+        .delay3 img {
+            width: 350px;
+            height: 250px;
+        }
+
+        .delay4 {
+            position: absolute;
+            bottom: -260px;
+            left: 50px;
+            animation: bounce 3s infinite ease-in-out;
+        }
+
+        .delay4 img {
+            width: 500px;
+            height: 400px;
+        }
+
+        .delay5 {
+            position: absolute;
+            top: -170px;
+            right: 120px;
+            animation: bounce 5s infinite ease-in-out;
+        }
+
+        .delay5 img {
+            width: 500px;
+            height: 400px;
+        }
+
+        @keyframes Gokubounce {
+            50% {
+                transform: translateY(-20px);
+            }
+
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes bounce {
+            50% {
+                transform: translateY(-20px);
+            }
+
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes move {
+            0% {
+                top: -500px;
+                transform: translateX(10vh) translateY(-25%) rotate(0);
+            }
+
+            50% {
+                top: 50vh;
+                transform: translateX(80vh) translateY(-50%) rotate(300deg);
+            }
+
+            100% {
+                top: 100vh;
+                transform: translateX(120vh) translateY(-100%) rotate(500deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="DragonBall">
+        <div class="delay1">
+            <img src="https://media1.giphy.com/media/SaSAUwiGPsPtswfPRk/giphy.webp?cid=790b7611m9uyabidof1scyldn2gyomlseyyznxxwy7hll89c&ep=v1_stickers_search&rid=giphy.webp&ct=s"
+                alt="Goku">
+        </div>
+        <div class="delay2">
+            <img src="https://media2.giphy.com/media/Vf7wDG3P2Wakmy4Vwj/giphy.webp?cid=ecf05e47gva0ksdp84ty8c3cs9ymw9lq5jnduio5px80blmc&ep=v1_stickers_search&rid=giphy.webp&ct=s"
+                alt="Sfera del drago">
+        </div>
+        <div class="delay3">
+            <img src="https://media2.giphy.com/media/V4ErRLRQG2lfKOjIht/giphy.webp?cid=790b7611cmuq689qx02ma7a1k1ijlgq1x3tyifafeod0hhoo&ep=v1_stickers_search&rid=giphy.webp&ct=s"
+                alt="nuovle">
+        </div>
+        <div class="delay4">
+            <img src="https://media2.giphy.com/media/V4ErRLRQG2lfKOjIht/giphy.webp?cid=790b7611cmuq689qx02ma7a1k1ijlgq1x3tyifafeod0hhoo&ep=v1_stickers_search&rid=giphy.webp&ct=s"
+                alt="nuovle">
+        </div>
+        <div class="delay5">
+            <img src="https://media2.giphy.com/media/V4ErRLRQG2lfKOjIht/giphy.webp?cid=790b7611cmuq689qx02ma7a1k1ijlgq1x3tyifafeod0hhoo&ep=v1_stickers_search&rid=giphy.webp&ct=s"
+                alt="nuovle">
+        </div>
+    </div>
+</body>
+
+</html>
