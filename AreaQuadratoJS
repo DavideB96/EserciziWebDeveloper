@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Area del Quadrato</title>
+    <style>
+        
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+
+        .contenitore {
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        button {
+            margin-bottom: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        #risultato {
+            font-size: 24px;
+            color: #343434;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contenitore">
+        <h1>Calcolo Area di un Quadrato</h1>
+        <button onclick="calcolaArea()">Calcola Area</button>
+        <p id="risultato"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
+<------------------------------------------------------------>
+function calcolaArea() {
+    let lato = prompt("Inserisci la lunghezza del lato del quadrato:");
+    lato = parseFloat(lato);
+
+    if (isNaN(lato) || lato <= 0) {
+        document.getElementById("risultato").innerText = "Valore non valido. Inserisci un numero positivo.";
+    } else {
+        let area = lato * lato;
+        document.getElementById("risultato").innerText = "L'area del quadrato è: " + area;
+    }
+}
