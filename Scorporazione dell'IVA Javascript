@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Scorpora IVA (22%)</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        input[type="number"] {
+            padding: 10px;
+            font-size: 16px;
+            margin-top: 10px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            width: 200px;
+        }
+
+        button {
+            margin-top: 15px;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #00aaff;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #0077aa;
+        }
+
+        #risultato {
+            margin-top: 20px;
+            font-size: 18px;
+            color: #333;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Scorpora IVA (22%)</h1>
+
+        <label for="valoreConIva">Valore con IVA (€):</label><br>
+        <input type="number" id="valoreConIva" step="0.01"><br>
+
+        <button onclick="scorporaIVA()">Calcola</button>
+
+        <p id="risultato"></p>
+    </div>
+
+    <script>
+        function scorporaIVA() {
+            const valoreConIva = parseFloat(document.getElementById('valoreConIva').value);
+
+            if (isNaN(valoreConIva)) {
+                document.getElementById('risultato').textContent = "Inserisci un numero valido.";
+                return;
+            }
+
+            const valoreSenzaIva = valoreConIva / 1.22;
+            const iva = valoreConIva - valoreSenzaIva;
+
+            document.getElementById('risultato').innerHTML = `
+        <strong>Valore senza IVA:</strong> €${valoreSenzaIva.toFixed(2)}<br>
+        <strong>IVA (22%):</strong> €${iva.toFixed(2)}
+      `;
+        }
+    </script>
+
+</body>
+
+</html>
