@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-image: url(https://cdn.pixabay.com/photo/2019/09/22/16/20/location-4496459_1280.png);
+      background-size: cover;
+      padding: 70px;
+      color: #003366;
+    }
+
+    h1 {
+      color: #003366;
+      text-align: center;
+      font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    label {
+      font-weight: bold;
+    }
+
+    input[type="text"] {
+      width: 300px;
+      padding: 8px;
+      margin-top: 5px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      background-color: #ffffffdd;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #003366;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    button:hover {
+      background-color: #014e9a;
+    }
+
+    #risultato {
+      margin-top: 20px;
+      padding: 15px;
+      background-color: #ffffffcc;
+      border-left: 4px solid #003366;
+    }
+  </style>
+</head>
+<body>
+
+<h1>🌎 Quiz di Geografia 🌍</h1>
+
+<label for="domanda1">1. Qual'è la Capitale del Portogallo?</label><br>
+<input type="text" id="domanda1"><br><br>
+
+<label for="domanda2">2. Quale paese confina sia con la Germania che con la Spagna?</label><br>
+<input type="text" id="domanda2"><br><br>
+
+<label for="domanda3">3. Quale mare si trova a sud dell’Italia?</label><br>
+<input type="text" id="domanda3"><br><br>
+
+<label for="domanda4">4. Qual è il paese più grande d’Europa per estensione?</label><br>
+<input type="text" id="domanda4"><br><br>
+
+<label for="domanda5">5. Quale paese europeo ha la forma di uno stivale?</label><br>
+<input type="text" id="domanda5"><br><br>
+
+<button onclick="valore()">Invia</button>
+
+<p id="risultato"></p>
+
+<script>
+function valore() {
+  var risposta1 = document.getElementById("domanda1").value;
+  var risposta2 = document.getElementById("domanda2").value;
+  var risposta3 = document.getElementById("domanda3").value;
+  var risposta4 = document.getElementById("domanda4").value;
+  var risposta5 = document.getElementById("domanda5").value;
+
+  var risultatoFinale = "";
+
+  if (risposta1 == "") {
+    risultatoFinale += "Domanda 1 non compilata<br>";
+  } else {
+    risultatoFinale += "1. Hai risposto: " + risposta1 + "<br>";
+  }
+
+  if (risposta2 == "") {
+    risultatoFinale += "Domanda 2 non compilata<br>";
+  } else {
+    risultatoFinale += "2. Hai risposto: " + risposta2 + "<br>";
+  }
+
+  if (risposta3 == "") {
+    risultatoFinale += "Domanda 3 non compilata<br>"; 
+  } else {
+    risultatoFinale += "3. Hai risposto: " + risposta3 + "<br>";
+  }
+
+    if (risposta4 == "") {
+    risultatoFinale += "Domanda 4 non compilata<br>";
+  } else {
+    risultatoFinale += "4. Hai risposto: " + risposta4 + "<br>";
+  }
+
+      if (risposta5 == "") {
+    risultatoFinale += "Domanda 5 non compilata<br>";
+  } else {
+    risultatoFinale += "5. Hai risposto: " + risposta5 + "<br>";
+  }
+
+  document.getElementById("risultato").innerHTML = risultatoFinale;
+}
+</script>
+
+</body>
+</html>
