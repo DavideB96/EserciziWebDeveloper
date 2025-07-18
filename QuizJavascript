@@ -76,47 +76,59 @@
 <p id="risultato"></p>
 
 <script>
+
 function valore() {
-  var risposta1 = document.getElementById("domanda1").value;
-  var risposta2 = document.getElementById("domanda2").value;
-  var risposta3 = document.getElementById("domanda3").value;
-  var risposta4 = document.getElementById("domanda4").value;
-  var risposta5 = document.getElementById("domanda5").value;
+  var risposta1 = document.getElementById("domanda1").value.toLowerCase();
+  var risposta2 = document.getElementById("domanda2").value.toLowerCase();
+  var risposta3 = document.getElementById("domanda3").value.toLowerCase();
+  var risposta4 = document.getElementById("domanda4").value.toLowerCase();
+  var risposta5 = document.getElementById("domanda5").value.toLowerCase();
 
   var risultatoFinale = "";
 
-  if (risposta1 == "") {
+  if (risposta1 === "") {
     risultatoFinale += "Domanda 1 non compilata<br>";
+  } else if (risposta1 === "lisbona") {
+    risultatoFinale += "1. ✔️ Corretto: " + risposta1 + "<br>";
   } else {
-    risultatoFinale += "1. Hai risposto: " + risposta1 + "<br>";
+    risultatoFinale += "1. ❌ Sbagliato: " + risposta1 + "<br>";
   }
 
-  if (risposta2 == "") {
+  if (risposta2 === "") {
     risultatoFinale += "Domanda 2 non compilata<br>";
+  } else if (risposta2 === "francia") {
+    risultatoFinale += "2. ✔️ Corretto: " + risposta2 + "<br>";
   } else {
-    risultatoFinale += "2. Hai risposto: " + risposta2 + "<br>";
+    risultatoFinale += "2. ❌ Sbagliato: " + risposta2 + "<br>";
   }
 
-  if (risposta3 == "") {
-    risultatoFinale += "Domanda 3 non compilata<br>"; 
+  if (risposta3 === "") {
+    risultatoFinale += "Domanda 3 non compilata<br>";
+  } else if (risposta3 === "mar mediterraneo" || risposta3 === "mediterraneo") {
+    risultatoFinale += "3. ✔️ Corretto: " + risposta3 + "<br>";
   } else {
-    risultatoFinale += "3. Hai risposto: " + risposta3 + "<br>";
+    risultatoFinale += "3. ❌ Sbagliato: " + risposta3 + "<br>";
   }
 
-    if (risposta4 == "") {
+  if (risposta4 === "") {
     risultatoFinale += "Domanda 4 non compilata<br>";
+  } else if (risposta4 === "russia") {
+    risultatoFinale += "4. ✔️ Corretto: " + risposta4 + "<br>";
   } else {
-    risultatoFinale += "4. Hai risposto: " + risposta4 + "<br>";
+    risultatoFinale += "4. ❌ Sbagliato: " + risposta4 + "<br>";
   }
 
-      if (risposta5 == "") {
+  if (risposta5 === "") {
     risultatoFinale += "Domanda 5 non compilata<br>";
+  } else if (risposta5 === "italia") {
+    risultatoFinale += "5. ✔️ Corretto: " + risposta5 + "<br>";
   } else {
-    risultatoFinale += "5. Hai risposto: " + risposta5 + "<br>";
+    risultatoFinale += "5. ❌ Sbagliato: " + risposta5 + "<br>";
   }
 
   document.getElementById("risultato").innerHTML = risultatoFinale;
 }
+
 </script>
 
 </body>
