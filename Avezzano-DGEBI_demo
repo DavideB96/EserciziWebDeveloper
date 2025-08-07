@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Avezzano</title>
+  </head>
+  <body>
+
+    <header id="demo1"></header>
+    <main id="demo"></main>
+    <div id="imgBox"></div>
+    <footer id="demo3"></footer>
+
+    <script>
+      var footerText = "<p align='center'>Fonte: Wikipedia</p>";
+
+      document.getElementById("demo1").innerHTML = "<h2 align='center' style='color:black'>Avezzano</h2>";
+
+      document.getElementById("demo").innerText = 
+        "Avezzano (in dialetto marsicano: /avedʣˈdzɑːnə/) è un comune italiano di oltre 40.000 abitanti della provincia dell'Aquila, in Abruzzo.\n\n" +
+        "Elevato a rango di città con decreto del presidente della Repubblica del 21 giugno 1994, è documentato per la prima volta con chiarezza nel IX secolo. Il centro urbano si è sviluppato a cominciare dal riordino amministrativo francese e ancor più verso la fine del XIX secolo in seguito al prosciugamento del lago Fucino, anticamente situato al centro della Marsica.\n\n" +
+        "La città, quasi completamente distrutta dal terremoto del 1915, è decorata con la medaglia d'argento al merito civile poiché nel 1944, pochi anni dopo la ricostruzione, subì gravi danni a causa dei bombardamenti aerei anglo-americani e atti di violenza con le rappresaglie nazifasciste.\n\n" +
+        "A vocazione agricola, oltre che industriale e commerciale, costituisce un nodo geografico stradale e ferroviario nell'area appenninica dell'Italia centro-meridionale.";
+
+      document.getElementById("imgBox").innerHTML = "<div style='text-align:center'><img src='https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Avezzano_view.jpg/330px-Avezzano_view.jpg' alt='Avezzano' style='margin-top:20px'>";
+
+      document.getElementById("demo3").innerHTML = footerText;
+
+    </script>
+
+  </body>
+</html>
