@@ -1,31 +1,67 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Avezzano</title>
-  </head>
-  <body>
 
-    <header id="demo1"></header>
-    <main id="demo"></main>
-    <div id="imgBox"></div>
-    <footer id="demo3"></footer>
+<head>
+  <title>Avezzano</title>
+  <style>
+    #demo1 {
+      font-size: 24px;
+      font-weight: bold;
+      text-align: center;
+      color: black;
+      margin-bottom: 20px;
+    }
 
-    <script>
+    button:hover {
+      cursor: pointer;
+    }
+
+    a {
+      color: blue;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    img {
+      float: right;
+      margin: 0 0 10px 10px;
+      border-radius: 10px;
+    }
+
+    footer {
+      margin-top: 40px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <button onclick="mostraPagina()">Mostra pagina</button>
+
+  <header id="demo1"></header>
+  <div id="content"></div>
+  <footer id="demo3"></footer>
+
+  <script>
+    function mostraPagina() {
       var footerText = "<p align='center'>Fonte: Wikipedia</p>";
 
-      document.getElementById("demo1").innerHTML = "<h2 align='center' style='color:black'>Avezzano</h2>";
+      document.getElementById("demo1").innerText = "Avezzano";
 
-      document.getElementById("demo").innerText = 
-        "Avezzano (in dialetto marsicano: /avedʣˈdzɑːnə/) è un comune italiano di oltre 40.000 abitanti della provincia dell'Aquila, in Abruzzo.\n\n" +
-        "Elevato a rango di città con decreto del presidente della Repubblica del 21 giugno 1994, è documentato per la prima volta con chiarezza nel IX secolo. Il centro urbano si è sviluppato a cominciare dal riordino amministrativo francese e ancor più verso la fine del XIX secolo in seguito al prosciugamento del lago Fucino, anticamente situato al centro della Marsica.\n\n" +
-        "La città, quasi completamente distrutta dal terremoto del 1915, è decorata con la medaglia d'argento al merito civile poiché nel 1944, pochi anni dopo la ricostruzione, subì gravi danni a causa dei bombardamenti aerei anglo-americani e atti di violenza con le rappresaglie nazifasciste.\n\n" +
-        "A vocazione agricola, oltre che industriale e commerciale, costituisce un nodo geografico stradale e ferroviario nell'area appenninica dell'Italia centro-meridionale.";
-
-      document.getElementById("imgBox").innerHTML = "<div style='text-align:center'><img src='https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Avezzano_view.jpg/330px-Avezzano_view.jpg' alt='Avezzano' style='margin-top:20px'>";
+      document.getElementById("content").innerHTML =
+        "<a href='#'><img src='https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Avezzano_view.jpg/330px-Avezzano_view.jpg' alt='Avezzano' width='300'></a>" +
+        "<b>Avezzano</b> (<a href='#'>in dialetto marsicano: /avedʣˈdzɑːnə/</a> ) è un <a href='#'>comune italiano</a> di oltre 40.000 abitanti della <a href='#'>provincia dell'Aquila</a>, in <a href='#'>Abruzzo</a>.<br><br>" +
+        "Elevato a rango di <a href='#'>città</a> con <a href='#'>decreto del presidente della Repubblica</a> del 21 giugno 1994, è documentato per la prima volta con chiarezza nel IX secolo. Il centro urbano si è sviluppato a cominciare dal <a href='#'>riordino amministrativo francese</a> e ancor più verso la fine del XIX secolo in seguito al prosciugamento del lago <a href='#'>Fucino</a>, anticamente situato al centro della <a href='#'>Marsica</a>.<br><br>" +
+        "La città, quasi completamente distrutta dal <a href='#'>terremoto del 1915</a>, è decorata con la <a href='#'>medaglia d'argento al merito civile</a> poiché nel 1944, pochi anni dopo la ricostruzione, subì gravi danni a causa dei <a href='#'>bombardamenti</a> aerei anglo-americani e atti di violenza con le rappresaglie <a href='#'>nazifasciste</a>.<br><br>" +
+        "A vocazione agricola, oltre che industriale e commerciale, costituisce un nodo geografico stradale e ferroviario nell'area <a href='#'>appenninica</a> dell'Italia centro-meridionale.";
 
       document.getElementById("demo3").innerHTML = footerText;
+    }
+  </script>
 
-    </script>
+</body>
 
-  </body>
 </html>
